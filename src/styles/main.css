@@ -128,6 +128,12 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
+  .titulo_cabecalho h1 {
+    font-size: 2.5rem; /* Diminui o tamanho do título */
+  }
+  .infos_cabecalho > p {
+    font-size: 1.1rem; /* Diminui o tamanho do parágrafo */
+  }
   header#home {
     height: auto;
     min-height: 100vh;
