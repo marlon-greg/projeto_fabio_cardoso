@@ -245,14 +245,11 @@ nav a:hover {
 }
 
 .titulo_cabecalho h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
   margin: 0 0 20px 0;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .infos_cabecalho > p {
-  font-size: 1.4rem;
   margin: 0;
   color: var(--background-white); /* Azul da paleta */
    text-shadow: 
@@ -345,6 +342,7 @@ footer {
    NAVBAR COM TEXTO ESCURO (SCROLL) - SOMENTE DESKTOP
 ============================== */
 @media (min-width: 769px) {
+  
   nav.scrolled {
     background-color: var(--primary-color); /* Fundo azul igual ao rodapé */
   }
@@ -354,5 +352,12 @@ footer {
   nav.scrolled a:hover {
     background-color: var(--background-white);
     color: var(--primary-color);
+  }
+  .titulo_cabecalho h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  }
+  .infos_cabecalho > p {
+  font-size: 1.4rem;
   }
 }
