@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FS Tecnologia</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS principal -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/projeto_fabio_cardoso/images/Logo_home.png" />
+    <link rel="stylesheet" crossorigin href="/projeto_fabio_cardoso/assets/index-Bw7MnQQw.css">
+  </head>
+  <body>
+    <!-- Header e navegação -->
+    <header id="home">
+      <nav>
+        <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+        <ul id="menu-list">
+          <button id="menu-close" aria-label="Fechar menu" class="close-btn">
+            &times;
+          </button>
+          <li class="logo-li" style="list-style: none">
+            <a href="#home">
+              <img
+                src="/projeto_fabio_cardoso/images/Logo_home.png"
+                id="Logo_home"
+                alt="Logo da FS Tecnologia"
+              />
+            </a>
+          </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#empresa">Empresa</a></li>
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-content">
+        <div class="titulo_cabecalho">
+          <h1>Seu Negócio SEMPRE<BR>em Primeiro plano</h1>
+        </div>
+        <div class="infos_cabecalho">
+          <p>
+            A FS Tecnologia e Comunicação oferece uma gama completa de serviços,
+            produtos e soluções de TI gerenciados. Somos o seu departamento
+            completo de suporte de TI. Desde suporte de TI remoto ou no local,
+            segurança cibernética ou serviços em nuvem, a FS Tecnologia e
+            Comunicação é sua equipe dedicada para resolver seus problemas de
+            TI.
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- Conteúdo principal -->
+    <main>
+      <section id="empresa">
+        <h2>Sobre Nós</h2>
+        <p>
+          Somos especialistas em tecnologia e comunicação, oferecendo soluções
+          inovadoras para empresas de todos os portes. Nossa missão é garantir
+          que seu negócio esteja sempre à frente, com suporte técnico de
+          excelência e atendimento personalizado.
+        </p>
+        <ul class="sobre_nos">
+          <li><b>Experiência:</b> Mais de 10 anos no mercado de TI.</li>
+          <li><b>Equipe:</b> Profissionais qualificados e certificados.</li>
+          <li><b>Atendimento:</b> Suporte rápido e eficiente.</li>
+        </ul>
+      </section>
+      <section id="solucoes">
+        <h2>Nossas Soluções</h2>
+        <p>
+          Oferecemos serviços de segurança cibernética, infraestrutura de redes,
+          consultoria em nuvem, backup de dados e muito mais. Conte com a FS
+          Tecnologia para proteger e potencializar o seu negócio.
+        </p>
+      </section>
+      <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <p>
+          Trabalhamos com softwares de gestão, equipamentos de rede, servidores,
+          computadores e acessórios das melhores marcas do mercado.
+        </p>
+      </section>
+      <section id="contato">
+        <h2>Contato</h2>
+        <p>
+          Entre em contato conosco pelo telefone (XX) XXXX-XXXX ou pelo e-mail
+          contato@fstecnologia.com.br. Estamos prontos para atender você!
+        </p>
+      </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+      <p>
+        &copy; 2024 FS Tecnologia e Comunicação. Todos os direitos reservados.
+      </p>
+    </footer>
+    <!-- Script do menu responsivo -->
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu-list");
+      const closeBtn = document.getElementById("menu-close");
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("open");
+      });
+      if (closeBtn) {
+        closeBtn.addEventListener("click", () => {
+          menu.classList.remove("open");
+        });
+      }
+      document.addEventListener("click", (e) => {
+        if (
+          menu.classList.contains("open") &&
+          !menu.contains(e.target) &&
+          e.target !== toggle
+        ) {
+          menu.classList.remove("open");
+        }
+      });
+      window.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+        // Só aplica no desktop
+        if (window.innerWidth >= 769) {
+          if (window.scrollY > 80) {
+            nav.classList.add("scrolled");
+          } else {
+            nav.classList.remove("scrolled");
+          }
+          // Remove do mobile
+          if (toggle) toggle.classList.remove("menu-toggle-scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+          // Aplica cor ao botão no mobile
+          if (toggle) {
+            if (window.scrollY > 80) {
+              toggle.classList.add("menu-toggle-scrolled");
+            } else {
+              toggle.classList.remove("menu-toggle-scrolled");
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
