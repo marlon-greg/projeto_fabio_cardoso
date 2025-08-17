@@ -2,7 +2,7 @@
 
 Acesse o site pelo link:
 
-[https://<seu-usuario>.github.io/<nome-do-repositorio>/](https://<seu-usuario>.github.io/<nome-do-repositorio>/)
+[https://<seu-usuario>.github.io/<nome-do-repositorio>/]([https://<seu-usuario>.github.io/<nome-do-repositorio>](https://marlon-greg.github.io/projeto_fabio_cardoso/)
 
 ---
 # 🌐 Projeto Website - Fábio Cardoso
