@@ -1,8 +1,10 @@
-## 🚀 Acesso ao Projeto
+## 🚀 Visualizar Projeto
 
-Acesse o site pelo link:
+Clique no botão abaixo para acessar o site:
 
-<https://marlon-greg.github.io/projeto_fabio_cardoso/>
+<a href="https://marlon-greg.github.io/projeto_fabio_cardoso/" target="_blank">
+  <img src="https://img.shields.io/badge/Ver%20Site-blue?style=for-the-badge&logo=arrow-right" alt="Ver Site">
+</a>
 
 ---
 # 🌐 Projeto Website - Fábio Cardoso
