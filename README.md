@@ -7,9 +7,6 @@
 
 <br>
 
-[SUGESTÃO]
-> Insira aqui uma imagem ou GIF do seu site para uma pré-visualização!
-> Exemplo:
 > ![Pré-visualização do Projeto](./public/images/preview.png)
 
 <br>
