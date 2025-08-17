@@ -243,11 +243,15 @@ nav a:hover {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-.infos_cabecalho p {
-  font-size: 1.2rem;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+.infos_cabecalho > p {
+  font-size: 1.4rem;
   margin: 0;
-  color: var(--primary-color); /* Azul da paleta */
+  color: var(--background-white); /* Azul da paleta */
+   text-shadow: 
+    -1px -1px 0 #000000,  
+     1px -1px 0 #000000,
+    -1px  1px 0 #000000,
+     1px  1px 0 #000000;
 }
 
 /* ==============================
