@@ -119,12 +119,3 @@ projeto_fabio_cardoso/
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
-
-## 👨‍💻 Contato
-
-[SUGESTÃO]
-> Adicione aqui suas informações de contato.
-> Exemplo:
-Marlon Greg - [LinkedIn](https://www.linkedin.com/in/seu-linkedin/) - seu-email@exemplo.com
-
-Link do Projeto: [https://github.com/marlon-greg/projeto_fabio_cardoso](https://github.com/marlon-greg/projeto_fabio_cardoso)
