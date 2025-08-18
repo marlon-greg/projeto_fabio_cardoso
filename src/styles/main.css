@@ -299,6 +299,45 @@ main p {
   text-align: justify;
 }
 
+/* ===== Botão WhatsApp Flutuante ===== */
+.btn-whatsapp {
+    /* Posicionamento */
+    position: fixed; /* ou 'absolute' se preferir */
+    bottom: 25px;
+    right: 25px;
+    z-index: 999; /* Garante que ele fique acima de outros elementos */
+    
+    /* Estilos do botão */
+    background-color: #25D366; /* Cor verde do WhatsApp */
+    color: #FFF; /* Cor do texto e do ícone */
+    border-radius: 50px; /* Bordas arredondadas */
+    padding: 12px 20px; /* Espaçamento interno */
+    font-family: Arial, sans-serif; /* Fonte */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    text-decoration: none; /* Remove o sublinhado do link */
+    
+
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+    
+ 
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-whatsapp svg {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E; /* Verde mais escuro no hover */
+    transform: scale(1.05); /* Aumenta um pouco de tamanho */
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+}
+
 /* ==============================
    LISTA SOBRE NÓS
 ============================== */
