@@ -36,7 +36,7 @@ header#home {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,7 +108,7 @@ nav a:hover {
 }
 
 /* ==============================
-   MENU RESPONSIVO (MOBILE)
+   CSS SOMENTE - MOBILE
 ============================== */
 #menu-toggle {
   display: none;
@@ -139,8 +139,8 @@ nav a:hover {
   header#home {
     height: auto;
     min-height: 100vh;
-    padding-top: 100px;
-    padding-bottom: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   nav {
@@ -339,7 +339,7 @@ footer {
 }
 
 /* ==============================
-   NAVBAR COM TEXTO ESCURO (SCROLL) - SOMENTE DESKTOP
+   CSS - SOMENTE DESKTOP
 ============================== */
 @media (min-width: 769px) {
   
@@ -359,5 +359,8 @@ footer {
   }
   .infos_cabecalho > p {
   font-size: 1.4rem;
+  }
+  header#home {
+    height: 100vh;
   }
 }
